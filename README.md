@@ -17,11 +17,6 @@ We recommend grocery products based on the reviews you feed for each product pur
 	</style>
 </head>
 <body>
-  <style>
-     body {
-        background-image: url('https://ncphwr.org.uk/wp-content/uploads/2018/02/cs9-barriers-healthy-eat.-facebook2-1.jpg');
-          }
-  </style>
 <nav>
 <div align="center" >    
     <h1 style="color:black; font-size:30px ; font-weight:bolder; margin-top: 170px; margin-left: 1px; font-family: sans-serif; margin-right: 20px">Product Recommendation</h1>
