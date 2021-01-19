@@ -1,7 +1,7 @@
 # Review_Based_Recomm_System
 We recommend grocery products based on the reviews you feed for each product purchase . The recommendation is based on unsupervised technique - KMeans, where we cluster TF-IDF scores of the reviews and analyze them
 
-![Demo](https://github.com/skotak2/Review_Based_Recomm_System/blob/main/Demo/demo.mp4)
+![Demo](https://j.gifs.com/Gv1l8J.gif)
 
 Check the Application @ https://productrecsystem.herokuapp.com/
 
