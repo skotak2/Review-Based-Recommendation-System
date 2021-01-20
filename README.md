@@ -30,22 +30,37 @@ The dataset was obtained from [Amazon review dataset](https://nijianmo.github.io
 
 ## Algorithm
 
-We use k-means clustering algorithm to cluster all the products based on the reviews. The features would form the unsupervised clusters based on TF-IDF scores of the text. 
+We use the k-means algorithm to cluster all the products based on the reviews. The features would form the unsupervised clusters based on TF-IDF scores of the text. 
 
-How do we do that ?
+**How do we do that ?**
 
-Each product's reviews are collected and concatenated as a single string.Now each product has the feature set of tf-idf scores for the concatenated string of reviews. Further The tf-idf scores as a feature set is used to find the euclidean distance between selected points in space, thus allowing us to implement the k-means algorithm.
+Each product's reviews are collected and concatenated as a single string.Thus, each product has the feature set of tf-idf scores for the concatenated string of reviews. Further the tf-idf scores as a feature set is used to find the euclidean distance between selected points in space, thus allowing us to implement the k-means algorithm.
 
-Based on the number of categories in the grocery store, we get to choose the number of centroids and bucket the products with a label. We would train the model, over iterations, allowing the clusters to move farther apart in space and save the model, i.e noting down the centroid points in the space. Further, we pickle dump the dictionary of cluster labels and its corresponding products.
+Based on the number of categories in the grocery store, we get to choose the number of centroids and bucket the products with a label. We would train the model, over iterations, allowing the clusters to move farther apart in space and save the model, i.e saving the centroid points in the space. Further, we pickle dump the dictionary of cluster labels and its corresponding products.
 
 The conversion of a string into a tf-idf score and then find its nearest centroid point (cluster) would done using a pipeline function and saved into a joblib file.
+
+**What is TF-IDF score ?**
+
+Given a **docuemt**(concatenated string of a product) in a **corpus**(across the reviews of all products), It tells how rarely a word occurs accross the corpus and how frequently it occurs in a that particular document.
+
+**Example for intution**
+
+Consider comparing reviews of chocolates. Let's assume there are three variants in chocolates available in the market. 
+
+Review for Variant 1 : This is the best choclate in the world.
+
+Review for Variant 2 : I liked this choclate.
+
+Given that similarity of two sentences here is based on Euclidean distance, the reviews would have closer distance due the presence of the word " Chocolate". 
+
+However, there would a be lot of noice and misallocations, but it's possibility is very less as the reviews for grociries would involve some amount of context to express the thoughts. Also we concatenate all the reviews for the product, which reduce the noise by considering the tf-idf scores for each word.
+
    
+## Architecture
 
-The aim of the project is to simulate the real-world process of deploying a product recommendation system, where different technologies are used to assist in the deployment. This report mainly highlights the overall experience and cost benefit analysis of working with these technologies, along with the code artifacts. 
 
-In the product recommendation model used, the purchase history of customers was retrieved to capture the customer’s inclination for a set of products available in the store. The recommendation system recommends products based on customer reviews posted by the customer. 
- 
-This recommendation system is intended to help e-commerce websites to service customers with appropriate recommendations at the right time with an attractive price tag and could address the problem of being inundated with choices, by helping the customer filter their choices based on a variety of attributes.
+
      	 
 HANDLING OF TECHNOLOGY & DEMONSTRATION IN A DEV ENVIRONMENT
 
