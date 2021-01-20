@@ -9,7 +9,25 @@ To build web application for product recommendations to customers based on their
 
 Try it yourself [here](https://productrecsystem.herokuapp.com/)
 
-#PROJECT GOAL#
+### TABLE OF CONTENTS
+* [Data](#data)
+* [Technologies](#technologies)
+* [Algorithm](#algorithm)
+* [Application Architecture](#application architecture)
+* [Implementation](#implementation)
+* [Results](#results)
+* [References](#references)
+
+## Data
+
+The dataset was obtained from [Amazon review dataset](https://nijianmo.github.io/amazon/index.html) released in 2014, provided by UCSD. The dataset contains 287,209 products with 5,074,160 reviews and ratings by 1,57,386 unique users
+
+## Technologies
+* Python - Scikit-learn, Pipeline
+* Flask 
+* Docker
+* Heroku
+
 
 The aim of the project is to simulate the real-world process of deploying a product recommendation system, where different technologies are used to assist in the deployment. This report mainly highlights the overall experience and cost benefit analysis of working with these technologies, along with the code artifacts. 
 
