@@ -78,8 +78,28 @@ The application is deployed on server and further hosted on cloud for public acc
 
 2. Once the folder is in place, use powershell command line for building the image. On CLI we navigate to the folder we just created.
 
-3. ``` powershell
+3. Building the image.
+
+   ``` powershell
    docker image build -t "recommsys".
    ```
+   ![GitHub Logo](Images/docker_img1.JPG)
 
+4. Running the application with docker image
 
+   ``` powershell
+   docker image build -t "recommsys".
+   ```
+   ![GitHub Logo](Images/docker_img2.JPG)
+ 
+5. Verify the image up and running without any errors and further validate for web applicationtio
+
+   ![GitHub Logo](Images/docker_img3.JPG)
+   
+   ![GitHub Logo](Images/docker_img4.JPG)
+
+6. Validating the application
+
+   ![GitHub Logo](Images/docker_test1.JPG)
+
+   ![GitHub Logo](Images/docker_test2.JPG)   
