@@ -48,9 +48,9 @@ Given a **docuemt**(concatenated string of a product) in a **corpus**(across the
 
 Consider comparing reviews of chocolates. Let's assume there are three variants in chocolates available in the market. 
 
-Review for Variant 1 : This is the best choclate in the world.
+***Review for Variant 1*** : This is the best choclate in the world.
 
-Review for Variant 2 : I liked this choclate.
+***Review for Variant 2*** : I liked this choclate.
 
 Given that similarity of two sentences here is based on Euclidean distance, the reviews would have closer distance due the presence of the word " Chocolate". 
 
