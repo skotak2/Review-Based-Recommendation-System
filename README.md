@@ -30,7 +30,9 @@ The dataset was obtained from [Amazon review dataset](https://nijianmo.github.io
 
 ## Algorithm
 
-We use the k-means algorithm to cluster all the products based on the reviews. The features would form the unsupervised clusters based on TF-IDF scores of the text. 
+We use the k-means algorithm to cluster all the products based on the reviews. The features would form the unsupervised clusters based on TF-IDF scores of the text.
+
+![GitHub Logo](Images/Kmeans.png) 
 
 **How do we do that ?**
 
