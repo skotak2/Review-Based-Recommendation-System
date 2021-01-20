@@ -30,7 +30,16 @@ The dataset was obtained from [Amazon review dataset](https://nijianmo.github.io
 
 ## Algorithm
 
-Here we intend to accept a string and 
+We use k-means clustering algorithm to cluster all the products based on the reviews. The features would form the unsupervised clusters based on TF-IDF scores of the text. 
+
+How do we do that ?
+
+Each product's reviews are collected and concatenated as a single string.Now each product has the feature set of tf-idf scores for the concatenated string of reviews. Further The tf-idf scores as a feature set is used to find the euclidean distance between selected points in space, thus allowing us to implement the k-means algorithm.
+
+Based on the number of categories in the grocery store, we get to choose the number of centroids and bucket the products with a label. We would train the model, over iterations, allowing the clusters to move farther apart in space and save the model, i.e noting down the centroid points in the space. Further, we pickle dump the dictionary of cluster labels and its corresponding products.
+
+The conversion of a string into a tf-idf score and then find its nearest centroid point (cluster) would done using a pipeline function and saved into a joblib file.
+   
 
 The aim of the project is to simulate the real-world process of deploying a product recommendation system, where different technologies are used to assist in the deployment. This report mainly highlights the overall experience and cost benefit analysis of working with these technologies, along with the code artifacts. 
 
