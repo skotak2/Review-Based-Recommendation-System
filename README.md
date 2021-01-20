@@ -1,9 +1,13 @@
-# Review_Based_Recomm_System
-We recommend grocery products based on the reviews you feed for each product purchase . The recommendation is based on unsupervised technique - KMeans, where we cluster TF-IDF scores of the reviews and analyze them
+## Review_Based_Recomm_System
+
+#OBJECTIVE
+
+To build web application for product recommendations to customers based on their reviews at the online grocery store. The web application is a prototype to mimic a real time application where the recommendations are rendered with product images for a given input string as a review.
+
 
 ![Demo](Demo/demo.gif)
 
-Check the Application @ https://productrecsystem.herokuapp.com/
+Try it yourself [here](https://productrecsystem.herokuapp.com/)
 
 #PROJECT GOAL#
 
