@@ -1,6 +1,6 @@
-## Review_Based_Recomm_System
+# Review_Based_Recomm_System
 
-# OBJECTIVE
+## OBJECTIVE
 
 To build web application for product recommendations to customers based on their reviews at the online grocery store. The web application is a prototype to mimic a real time application where the recommendations are rendered with product images for a given input string as a review.
 
