@@ -34,7 +34,7 @@ We use the k-means algorithm to cluster all the products based on the reviews. T
 
 ![GitHub Logo](Images/Kmeans.png) 
 
-*How do we do that ?
+**How do we do that ?**
 
 Each product's reviews are collected and concatenated as a single string.Thus, each product has the feature set of tf-idf scores for the concatenated string of reviews. Further the tf-idf scores as a feature set is used to find the euclidean distance between selected points in space, thus allowing us to implement the k-means algorithm.
 
@@ -42,11 +42,11 @@ Based on the number of categories in the grocery store, we get to choose the num
 
 The conversion of a string into a tf-idf score and then find its nearest centroid point (cluster) would done using a pipeline function and saved into a joblib file.
 
-*What is TF-IDF score ?
+**What is TF-IDF score ?**
 
-Given a **docuemt**(concatenated string of a product) in a **corpus**(across the reviews of all products), It tells how rarely a word occurs accross the corpus and how frequently it occurs in a that particular document.
+Given a **document**(concatenated string of a product) in a **corpus**(across the reviews of all products), It tells how rarely a word occurs accross the corpus and how frequently it occurs in a that particular document.
 
-*Example for intution
+**Example for intution**
 
 Consider comparing reviews of chocolates. Let's assume there are three variants in chocolates available in the market. 
 
