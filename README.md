@@ -7,7 +7,7 @@ To build web application for product recommendations to customers based on their
 
 ![Demo](Demo/demo.gif)
 
-Try it yourself [here](https://productrecsystem.herokuapp.com/)
+Check it out live [here](https://productrecsystem.herokuapp.com/)
 
 ### TABLE OF CONTENTS
 * [Data](#data)
@@ -28,6 +28,9 @@ The dataset was obtained from [Amazon review dataset](https://nijianmo.github.io
 * Docker
 * Heroku
 
+## Algorithm
+
+Here we intend to accept a string and 
 
 The aim of the project is to simulate the real-world process of deploying a product recommendation system, where different technologies are used to assist in the deployment. This report mainly highlights the overall experience and cost benefit analysis of working with these technologies, along with the code artifacts. 
 
