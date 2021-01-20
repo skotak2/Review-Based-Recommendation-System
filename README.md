@@ -61,7 +61,10 @@ However, there would a be lot of noice and misallocations, but it's possibility 
    
 ## Architecture
 
+The flow of data given a input string is explained in this section. The input string is passed on to pipeline which is saved on joblib [file](Docker/model_pipeline.joblib). The pipeline would return labels which is used by the lookup [file](Docker/product_lkp.pickle1) to return the ASIN IDs. These ASIN IDs are used to generate product URLS which is used to post the recommendations.
 
+
+![GitHub Logo](Images/Architecture.png)
 
      	 
 HANDLING OF TECHNOLOGY & DEMONSTRATION IN A DEV ENVIRONMENT
