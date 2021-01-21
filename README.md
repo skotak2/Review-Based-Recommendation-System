@@ -72,9 +72,15 @@ The flow of data given a input string is explained in this section. The input st
 
 Once the model is trained with the dataset using the algorithm, we save the model pipeline for deploying flask application on local server or cloud.
 
-The application is deployed on server and further hosted on cloud for public accesss. This can be done with two alternatives depending on the requirements.
+Given a the flask app requires a set environment and further perform predictions through the saved model pipline, we consider building an image using docker. The docker container can be hosted on local system or on cloud as per requirements.
 
-**Alternative 1 - Docker Image**
+We build a docker image first, which could be containerized on local system and test the application. Building image makes it easy to flexibly build containers on any server.
+
+However, you could also push the application directly in to the containers already facilitated by the cloud environments. We host the web application on *Heroku* container directly without building any image on local system.
+
+Both the methods are illustrated below,
+
+**Docker Image**
 
 1. A docker folder is created on your local system with the [requirements](Docker/Dockerfile) file. Check the folder [here](Docker)
 
@@ -105,7 +111,7 @@ The application is deployed on server and further hosted on cloud for public acc
 
    ![GitHub Logo](Images/docker_test2.JPG)   
 
-**Alternative 2 - Heroku Deployment using container (Cloud deployment)****
+**Heroku container (Cloud deployment)****
 
 1. A docker folder is created on your local system with the [requirements](Docker/Dockerfile) file. Check the folder [here](Docker)
 
