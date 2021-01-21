@@ -163,3 +163,14 @@ The application is deployed on server and further hosted on cloud for public acc
   
  ![GitHub Logo](Images/pic4.png)   
 
+## References
+
+1. https://docs.docker.com/develop/develop-images/dockerfile_best-practices/
+2. Data Science in Production: Building Scalable Model Pipelines with Python – Ben G. Weber 
+3. https://help.heroku.com/4RNZSHL2/
+4. https://aws.amazon.com/
+5. https://towardsdatascience.com/deploy-machine-learning-pipeline-on-cloud-using-docker-container-bec64458dc01
+6. https://medium.com/analytics-vidhya/deploy-your-machine-learning-model-on-docker-ee2b931e133c
+7. https://medium.com/analytics-vidhya/deploy-machinelearning-model-with-flask-and-heroku-2721823bb653
+
+
