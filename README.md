@@ -111,7 +111,7 @@ The application is deployed on server and further hosted on cloud for public acc
 
 2. Once the folder is in place, use command prompt as the Heroku CLI, installed on the system. We use heroku container and push the Docker folder and create the image on heroku to host the application.
 
-3.  Check if heroku is installed by following the below command, else check [here](https://devcenter.heroku.com/articles/heroku-cli)
+3. Check if heroku is installed by following the below command, else check [here](https://devcenter.heroku.com/articles/heroku-cli)
    ``` cmd
    heroku
    ```
