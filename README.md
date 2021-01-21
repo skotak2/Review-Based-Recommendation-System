@@ -98,7 +98,6 @@ The application is deployed on server and further hosted on cloud for public acc
 
    ![GitHub Logo](Images/docker_img3.JPG)
    
-   ![GitHub Logo](Images/docker_img4.png)
 
 6. Validating the application
 
