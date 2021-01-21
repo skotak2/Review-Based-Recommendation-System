@@ -113,7 +113,7 @@ The application is deployed on server and further hosted on cloud for public acc
 
 3.  Check if heroku is installed by following the below command, else check [here](https://devcenter.heroku.com/articles/heroku-cli)
    ``` cmd
-   heriku
+   heroku
    ```
    ![GitHub Logo](Images/heroku_dep1.JPG)
 
