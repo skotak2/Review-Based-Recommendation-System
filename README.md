@@ -14,7 +14,7 @@ Check it out live [here](https://productrecsystem.herokuapp.com/)
 * [Technologies](#technologies)
 * [Algorithm](#algorithm)
 * [Architecture](#architecture)
-* [Implementation](#implementation)
+* [Deployment](#deployment)
 * [Results](#results)
 * [References](#references)
 
@@ -68,7 +68,9 @@ The flow of data given a input string is explained in this section. The input st
 ![GitHub Logo](Images/arch.PNG)
 
      	 
-## Implementation
+## Deployment
+
+Once the model is trained with the dataset using the algorithm, we save the model pipeline for deploying flask application on local server or cloud.
 
 The application is deployed on server and further hosted on cloud for public accesss. This can be done with two alternatives depending on the requirements.
 
@@ -103,3 +105,62 @@ The application is deployed on server and further hosted on cloud for public acc
    ![GitHub Logo](Images/docker_test1.JPG)
 
    ![GitHub Logo](Images/docker_test2.JPG)   
+
+**Alternative 2 - Heroku Deployment using container (Cloud deployment)****
+
+1. A docker folder is created on your local system with the [requirements](Docker/Dockerfile) file. Check the folder [here](Docker)
+
+2. Once the folder is in place, use command prompt as the Heroku CLI, installed on the system. We use heroku container and push the Docker folder and create the image on heroku to host the application.
+
+3  Check if heroku is installed, else check [here](https://devcenter.heroku.com/articles/heroku-cli)
+   ``` powershell
+   docker image build -t "recommsys".
+   ```
+   ![GitHub Logo](Images/heroku_dep1.JPG)
+
+4. Now login into heroku container
+
+   ``` cmd
+   heroku container: login
+   ```
+   
+   Create dummy application
+   
+   ``` cmd
+   heroku create recommsys
+   ```
+   
+   ![GitHub Logo](Images/heroku_dummy_app.JPG)
+ 
+5. Now push to web directly from the docker folder directly
+   
+   ``` cmd
+   heroku container:push web --app recommsys
+   ```
+   
+   Now release the app to web,
+   
+   ``` cmd
+   heroku container:release web --app recommsys
+   ```
+   
+   ![GitHub Logo](Images/heroku_push_deploy_web.JPG)
+
+6. Now open in web page, command line shortcut is 
+   
+   ``` cmd
+   heroku open --app recommsys
+   ```   
+   
+   ![GitHub Logo](Images/heroku_open_url_shortcut.JPG)
+
+## Results
+
+ ![GitHub Logo](Images/pic1.png)
+ 
+ ![GitHub Logo](Images/pic2.png)
+  
+ ![GitHub Logo](Images/pic3.png)
+  
+ ![GitHub Logo](Images/pic4.png)   
+
