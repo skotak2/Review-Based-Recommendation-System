@@ -1,4 +1,4 @@
-# Review_Based_Recomm_System
+# Review-Based-Recommendation-System
 
 ## OBJECTIVE
 
