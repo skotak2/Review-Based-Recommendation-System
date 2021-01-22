@@ -111,7 +111,7 @@ Both the methods are illustrated below,
 
    ![GitHub Logo](Images/docker_test2.JPG)   
 
-**Heroku container (Cloud deployment)****
+**Heroku container (Cloud deployment)**
 
 1. A docker folder is created on your local system with the [requirements](Docker/Dockerfile) file. Check the folder [here](Docker)
 
@@ -161,6 +161,7 @@ Both the methods are illustrated below,
 
 ## Results
 
+Here you could see, for a given input, you get presented with relevant recommendations.
  ![GitHub Logo](Images/pic1.png)
  
  ![GitHub Logo](Images/pic2.png)
